@@ -263,7 +263,7 @@ ggplot(result_all, aes(x=date, y=s)) +
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
-<p>In order to identify weekdays and weekends in our dataset, first of all we will create a factor variable, so that we can divide the analysis and the plotting by its levels:</p>
+<p>For this analysis, the filled-in data set will be used.<br />In order to identify weekdays and weekends in our dataset, first of all we will create a factor variable, so that we can divide the analysis and the plotting by its levels:</p>
 <pre class="r"><code>library(chron)
 data2$weekend = as.factor(chron::is.weekend(data2$date))
 levels(data2$weekend) &lt;- c(&quot;WEEKDAY&quot;, &quot;WEEKEND&quot;)</code></pre>

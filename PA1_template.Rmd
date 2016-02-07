@@ -148,6 +148,7 @@ ggplot(result_all, aes(x=date, y=s)) +
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
+For this analysis, the filled-in data set will be used.  
 In order to identify weekdays and weekends in our dataset, first of all we will create a factor variable, so that we can divide the analysis and the plotting by its levels:
 ```{r, fig.path="./figure/"}
 library(chron)
