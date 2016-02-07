@@ -193,7 +193,6 @@ length(missingdata$steps)
 ```
 ## [1] 2304
 ```
-<<<<<<< HEAD
 
 A graphical depiction of the NA distribution follows:
 
@@ -252,12 +251,9 @@ marginplot(data[,c(3,1)])
 marginplot(data[,c(2,1)])
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)
+![](./figure/unnamed-chunk-11-1.png)
 
 The plots indicate that the missing values appear only for specific days (2nd plot) and all the intervals (1st plot).  
-=======
-g
->>>>>>> master
 The chosen criteria to impute the missing values will be to assign them the mean of the number of steps per interval:
 
 ```r
@@ -349,11 +345,7 @@ library(gridExtra)
 grid.arrange(p1, p2, ncol=2)
 ```
 
-<<<<<<< HEAD
 ![](./figure/unnamed-chunk-15-1.png)
-=======
-![](./figure/unnamed-chunk-14-1.png)
->>>>>>> master
 
 The new mean and median of the total number of steps taken per day have the following values:
 
@@ -387,11 +379,7 @@ ggplot(result_all, aes(x=date, y=s)) +
       ylab("Total number of steps")
 ```
 
-<<<<<<< HEAD
 ![](./figure/unnamed-chunk-17-1.png)
-=======
-![](./figure/unnamed-chunk-16-1.png)
->>>>>>> master
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
@@ -414,10 +402,6 @@ ggplot(result4, aes(x = interval, y = s)) +
       facet_grid(weekend ~ .)
 ```
 
-<<<<<<< HEAD
 ![](./figure/unnamed-chunk-19-1.png)
-=======
-![](./figure/unnamed-chunk-18-1.png)
->>>>>>> master
 
 The pattern shows that for weekdays, the highest number of steps occur at early morning intervals, matching the commuting time. Wheareas, for weekends, the pattern is more uniform and the peak at early morning intervals is not as noticeable.
